@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	let allPrices = document.querySelectorAll('.price')
+	let allPrices = document.querySelectorAll('.prices')
     let sum = 0;
     allPrices.forEach(item=> {
         sum+= +item.innerText
@@ -14,7 +14,8 @@ const getSum = () => {
     let tBody = document.querySelector('tbody')
     tBody.append(newRow)
     let newCell = document.createElement('td')
-    newRow.innerText = `Total Price ${sum}`
+    newCell.innerText = `Total Price ${sum}`
+	newCell.id = ''
     newRow.append(newCell)
   
 };
