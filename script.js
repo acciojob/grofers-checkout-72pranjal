@@ -14,7 +14,7 @@ const getSum = () => {
     let tBody = document.querySelector('tbody')
     tBody.append(newRow)
     let newCell = document.createElement('td')
-    newCell.innerText = `Total Price ${sum}`
+    newCell.innerText = `Total Price: ${sum}`
 	newCell.id = 'ans'
     newRow.append(newCell)
   
